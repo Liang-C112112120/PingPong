@@ -64,12 +64,12 @@ begin
         reset <= '1';
         
         --一開始由左方發球
-        wait for 530 ns; --右方打到球
+        wait for 530 ns; --右方接球
         swR <= '1';
         wait for 80 ns;
         swR <= '0';
 
-        wait for 300 ns; --左方太早打 右方得分 發球
+        wait for 300 ns; --左方提早打 右方得分並發球
         swL <= '1';
         wait for 80 ns;
         swL <= '0';
@@ -78,12 +78,12 @@ begin
         wait for 80 ns;
         swR <= '0';
         
-        wait for 500 ns; --左方打到球
+        wait for 500 ns; --左方接球
         swL <= '1';
         wait for 80 ns;
         swL <= '0';
         
-        wait for 100 ns; --右方太早打 左方得分 發球
+        wait for 100 ns; --右方提早打 左方得分並發球
         swR <= '1';
         wait for 80 ns;
         swR <= '0';
@@ -92,7 +92,7 @@ begin
         wait for 80 ns;
         swL <= '0';
         
-        wait for 550 ns; --右方打到球
+        wait for 550 ns; --右方接球
         swR <= '1';
         wait for 80 ns;
         swR <= '0';
