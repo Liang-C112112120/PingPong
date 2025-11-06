@@ -16,4 +16,5 @@ S3(Rwin)：當左方玩家提早打或漏接時，右方玩家得分。
   
 設計情境：左方發球 -> 右方接球 -> 左方提早打，右方得分並發球 -> 左方接球 -> 右方提早打，左方得分並發球 -> 右方漏接，左方得分並發球 -> 右方接球 -> 左方漏接，右方得分，結束  
 模擬結果：  
-<img width="1199" height="515" alt="sim" src="https://github.com/user-attachments/assets/4725d92c-0bcb-4ab6-9c8e-93c2c8d102d9" />
+<img width="1366" height="539" alt="sim" src="https://github.com/user-attachments/assets/fd823e9e-3203-42ea-acd8-9f680e6d83ac" />
+
