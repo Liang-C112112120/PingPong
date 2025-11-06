@@ -96,8 +96,17 @@ begin
         swR <= '1';
         wait for 80 ns;
         swR <= '0';
-        --左方漏接 右方得分 END
         
+        wait for 680 ns; --左方漏接 右方得分並發球
+        swR <= '1';
+        wait for 80 ns;
+        swR <= '0';
+        
+        wait for 550 ns; --左方接球
+        swL <= '1';
+        wait for 80 ns;
+        swL <= '0';
+        --右方漏接 左方得分 結束
         wait;
 end process;
  
