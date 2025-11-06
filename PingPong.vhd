@@ -13,7 +13,7 @@ entity pingpong is
 end pingpong;
 
 architecture Behavioral of pingpong is
-type STATE_TYPE is (MovingL, MovingR, Lwin, Rwin);
+type STATE_TYPE is (MovingR, MovingL, Lwin, Rwin);
 signal state : STATE_TYPE;
 signal prev_state: STATE_TYPE;
 signal led_r : STD_LOGIC_VECTOR (7 downto 0);
@@ -150,4 +150,5 @@ begin
 		end if;
 	end process;
 	
+
 end Behavioral;
