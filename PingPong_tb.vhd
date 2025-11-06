@@ -92,12 +92,7 @@ begin
         wait for 80 ns;
         swL <= '0';
         
-        wait for 100 ns; --右方漏接 左方得分 發球
-        swL <= '1';
-        wait for 80 ns;
-        swL <= '0';
-        
-        wait for 360 ns; --右方打到球
+        wait for 550 ns; --右方打到球
         swR <= '1';
         wait for 80 ns;
         swR <= '0';
