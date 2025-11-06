@@ -45,14 +45,14 @@ begin
              case state is
                 when MovingR => --S0 右移中
                     --if (led_r = "00000001" and i_swR = '0') or (led_r > "00000001" and i_swR = '1') then --右沒打到或提早(改)
-                    if (led_r<"00000001") or (led_r > "00000001" and i_swR = '1') then
+                    if (led_r < "00000001") or (led_r > "00000001" and i_swR = '1') then
                         state <= Lwin;
                     elsif led_r(0)='1' and i_swR ='1' then --右打到 then
                         state <= MovingL;
                     end if;
                 when MovingL => --S1 左移中
                     --if (led_r = "10000000" and i_swL = '0') or (led_r < "10000000" and i_swL = '1') then --左沒打到或提早(改)
-                    if (led_r="00000000") or (led_r < "10000000" and i_swL = '1') then
+                    if (led_r = "00000000") or (led_r < "10000000" and i_swL = '1') then
                         state <= Rwin;
                     elsif led_r(7)='1' and i_swL ='1' then --左打到 then
                        state <= MovingR;
@@ -152,3 +152,4 @@ begin
 	
 
 end Behavioral;
+
